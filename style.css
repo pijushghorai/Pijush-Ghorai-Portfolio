@@ -132,7 +132,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 span {
-  color: #8baafd;
+  color: #06d0ef;
 }
 
 .header-text h2 {
@@ -309,4 +309,262 @@ nav .fas {
     transform: scaleX(1);
   }
 }
+
 /* ------------------------------------------------- */
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 4;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
+}
+
+/* --------------------about section------------------- */
+#about {
+  padding: 80px 6%;
+  color: #ababab;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  flex-basis: 60%;
+  word-spacing: 2px;
+}
+
+.sub-title {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.sub-line {
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.tab-contents {
+  display: none;
+  line-height: 35px;
+  font-size: 15px;
+  margin-left: 18px;
+}
+
+.tab-contents ul li span {
+  font-weight: 400;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+.space1 {
+  margin-left: 40px;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 30px 0 40px;
+}
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: " ";
+  width: 0;
+  height: 3px;
+  background: #03BFDB;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 100%;
+}
+
+.Education {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+
+.button::before,
+.button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 3px solid #272431;
+  transition: all 0.15s ease;
+}
+
+.button::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+
+.button::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.button:active,
+.button:focus {
+  outline: none;
+}
+
+.button:active::before,
+.button:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.button:active::before {
+  top: 3px;
+}
+
+.button:active::after {
+  bottom: 3px;
+}
+
+.button_lg {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0f1923;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.button_lg::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
+}
+
+.button_lg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #020202;
+  transition: all 0.2s ease;
+}
+
+.button_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: #03BFDB;
+  transform: skew(-15deg);
+  transition: all 0.2s ease;
+}
+
+.button_text {
+  position: relative;
+}
+
+.button:hover {
+  color: #0f1923;
+}
+
+.button:hover .button_sl {
+  width: calc(100% + 15px);
+}
+
+.button:hover .button_lg::after {
+  background-color: #fff;
+}
+
+.col-2 {
+  flex-basis: 35%;
+}
+
+.col-2 img {
+  width: 100%;
+  margin-top: 70px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.col-2 img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
