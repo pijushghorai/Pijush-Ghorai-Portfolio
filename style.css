@@ -588,7 +588,7 @@ nav .fas {
 
 .card2 {
   width: 300px;
-  background: #C8E99C;
+  background: #c8e99c;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -639,3 +639,304 @@ nav .fas {
   text-align: left;
 }
 
+/* -------------------------photographs------------------------- */
+#photography {
+  padding: 80px 6%;
+}
+
+#photographs {
+  margin-right: -40px;
+}
+
+.pos_Set {
+  margin-top: -110px;
+  height: 100vh;
+  margin-right: 60px;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.sub-project {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  position: relative;
+  width: 600px;
+  height: 700px;
+  margin-top: -80px;
+  transform-style: preserve-3d;
+  animation: rotate 40s linear infinite;
+  -webkit-animation: rotate 40s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: perspective(1200px) rotateY(0deg);
+    -webkit-transform: perspective(1200px) rotateY(0deg);
+    -moz-transform: perspective(1200px) rotateY(0deg);
+    -ms-transform: perspective(1200px) rotateY(0deg);
+    -o-transform: perspective(1200px) rotateY(0deg);
+  }
+
+  100% {
+    transform: perspective(1200px) rotateY(360deg);
+    -webkit-transform: perspective(1200px) rotateY(360deg);
+    -moz-transform: perspective(1200px) rotateY(360deg);
+    -ms-transform: perspective(1200px) rotateY(360deg);
+    -o-transform: perspective(1200px) rotateY(360deg);
+  }
+}
+
+.slider span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 30deg)) translateZ(-1200px);
+  -webkit-transform: rotateY(calc(var(--i) * 30deg)) translateZ(-1200px);
+  -moz-transform: rotateY(calc(var(--i) * 30deg)) translateZ(-1200px);
+  -ms-transform: rotateY(calc(var(--i) * 30deg)) translateZ(-1200px);
+  -o-transform: rotateY(calc(var(--i) * 30deg)) translateZ(-1200px);
+}
+
+.slider span img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  object-fit: cover;
+  transition: 3s;
+  -webkit-transition: 3s;
+  -moz-transition: 3s;
+  -ms-transition: 3s;
+  -o-transition: 3s;
+}
+
+.slider span img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -220px;
+}
+
+/* ----------------Blog Section--------------- */
+#blogs {
+  padding: 80px 6%;
+}
+
+.sub-title {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.service-lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.gg {
+  text-align: center;
+  font-size: 60px;
+  margin-bottom: 80px;
+}
+
+.buttonSet {
+  width: 400px;
+  border: 2px solid #636266;
+}
+
+.buttonSet .button_lg {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: #070707;
+  background-color: #9b9b9e;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.post-card {
+  width: 450px;
+  height: 480px;
+  background: lightgrey;
+  background: linear-gradient(
+    to right,
+    rgb(198, 193, 201) 0%,
+    rgb(90, 140, 216) 100%
+  );
+  border: 1px solid rgb(84 90 106);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 17px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.post-card:hover {
+  transform: translateY(-15px);
+  -webkit-transform: translateY(-15px);
+  -moz-transform: translateY(-15px);
+  -ms-transform: translateY(-15px);
+  -o-transform: translateY(-15px);
+  background: linear-gradient(
+    to right,
+    rgb(198, 193, 201) 0%,
+    rgb(233, 144, 71) 100%
+  );
+}
+
+.avatar {
+  height: 40px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: rgb(198, 192, 204);
+}
+
+.avatar img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #0a0a0a;
+  text-decoration: none;
+  transition: all 0.35s ease-in;
+}
+
+.datetime {
+  font-size: 14px;
+  color: rgb(23, 23, 24);
+}
+
+.seting {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 5px;
+}
+
+.image-preview {
+  flex: 1;
+  min-height: 150px;
+  width: 100%;
+
+  /* background-color: blueviolet;
+  background-image: linear-gradient(to top left, blueviolet, rgb(73, 31, 112)); */
+  margin-bottom: 4px;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 5px rgb(38, 39, 39);
+  border-radius: 10px;
+  border: #333 1px solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.comment-like {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2px 0;
+}
+
+.comment-like span {
+  cursor: pointer;
+  height: 40px;
+  width: 45px;
+  padding: 0 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.15s ease;
+  color: #000;
+  font-size: 15px;
+  -webkit-transition: all 0.15s ease;
+  -moz-transition: all 0.15s ease;
+  -ms-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+}
+
+.comment-like .like {
+  cursor: pointer;
+  height: 40px;
+  width: 60px;
+  padding: 0 3px;
+  font-weight: 800;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: all 0.15s ease;
+  color: #000;
+
+  font-size: 15px;
+}
+
+.comment-like span:hover {
+  background-color: rgba(230, 20, 55, 0.096);
+}
+
+.comment-like span svg {
+  fill: rgb(12, 12, 12);
+  margin-right: 2px;
+}
+
+.gotoTop svg {
+  cursor: pointer;
+  height: 40px;
+  width: 45px;
+}
